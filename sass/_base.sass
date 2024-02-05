@@ -1,0 +1,50 @@
+$color-white: #ffffff
+$color-red: #BC4749
+$color-green: #6A994E
+$box-shadow: (0 .4rem .4rem rgba(0, 0, 0, 0.3))
+
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+    @include respond(tab-land)
+        font-size: 56.25%
+    @include respond(tab-port)
+        font-size: 50%
+    @include respond(phone)
+        font-size: 30%
+    @include respond(big-screen)
+        font-size: 75%
+
+body
+    font-family: 'Inter'
+    background: #000
+    color: $color-white
+    display: flex
+    padding: 7rem 
+    justify-content: center
+    align-items: center
+    position: relative
+    z-index: 1
+    @include respond(phone)
+        padding: 0rem 
+        background: none
+
+// .first-elipse
+//     position: absolute
+//     top: 0
+//     left: -4rem
+//     z-index: 2
+// .second-elipse
+//     position: absolute
+//     top: 50rem
+//     left: 8rem
+//     z-index: 2
+// .third-elipse
+//     position: absolute
+//     top: 13rem
+//     left: 80rem
+//     z-index: 2

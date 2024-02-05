@@ -1,0 +1,84 @@
+.box-container
+    max-width: 114rem
+    margin: 3.4rem 4.8rem
+    &__logo
+        padding: 1.2rem 0 1.2rem 0
+        margin-right: 8.7rem
+        @include respond(tab-port)
+            margin-right: 0
+    &__nav-menu
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+
+        // margin-right: 70rem
+    &__button
+        display: flex
+    &__btn
+        display: flex
+        width: 11.4rem
+        height: 3.9rem
+        padding: 0 1.3rem
+        justify-content: center
+        align-items: center
+        color: #fff
+        @include respond(phone)
+            width: 5rem
+            height: 3rem
+            padding: .1rem .3rem
+
+.logo
+    margin-left: 5rem
+    cursor: pointer
+    @include respond(tab-port)
+        margin-left: 0
+
+    @include respond(phone)
+        height: auto
+        width: 100%
+
+.nav-menu
+    display: flex
+    margin-right: 37rem
+    @include respond(tab-port)
+        margin-right: 0
+    &__list
+        display: flex
+        flex-direction: row
+        align-items: center
+    &__list-item
+        margin-right: 4.8rem
+        font-size: 1.2rem
+        list-style-type: none
+        &:last-child
+            margin-right: 0
+        @include respond(phone)
+            font-size: 2rem
+        a
+            text-decoration: none
+            color: #fff
+            white-space: nowrap
+            cursor: pointer
+            opacity: 0.5
+            &:hover
+                font-weight: 500
+                opacity: 1
+    @include respond(phone)
+        display: none
+    &__login
+        display: flex
+        align-items: center
+        margin-right: 1.3rem
+        cursor: pointer
+        @include respond(phone)
+            font-size: 2rem
+
+    &__btn
+        display: flex
+        width: 11rem
+        height: 4rem
+        padding: .8rem 1.3rem
+        justify-content: center
+        align-items: center
+        cursor: pointer

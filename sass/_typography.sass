@@ -1,0 +1,50 @@
+body
+    color: $color-white
+    font-size: 1.2rem
+.title
+    font-family: Inter
+    font-size: 4.1rem
+    font-style: normal
+    font-weight: 600
+    line-height: normal
+    @include respond(phone)
+        font-size: 3rem
+
+.title-2
+    font-family: Inter
+    font-size: 1.6rem
+    font-style: normal
+    font-weight: 600
+    line-height: normal
+    @include respond(phone)
+        font-size: 3rem
+.title-3
+    font-family: Inter
+    font-size: 1.3rem
+    font-style: normal
+    font-weight: 500
+    margin: 1rem 0 2.4rem 0
+    @include respond(phone)
+        font-size: 2rem
+
+.meaning
+    color: rgba(255, 255, 255, 0.80)
+    font-family: Inter
+    font-size: 1.2rem
+    font-style: normal
+    font-weight: 400
+    margin-bottom: 1.5rem
+
+.inner-text
+    font-family: Inter
+    font-size: 1.2rem
+    font-style: normal
+    font-weight: 400
+    margin-bottom: 1.5rem
+    &:last-child
+        margin-bottom: 0
+    @include respond(phone)
+        font-size: 2rem
+.text
+    @include respond(phone)
+        display: none
